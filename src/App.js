@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import HomePage from './pages/Homepage/Homepage';
+
+import { Fab } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <HomePage />
       </header>
+      <div className="add-button">
+        <Fab color="primary" aria-label="add">
+              <AddIcon />
+          </Fab>
+      </div>
     </div>
   );
 }
